@@ -1,0 +1,983 @@
+/* style="text-align: center; margin-left: 150px;" */
+@import 
+url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+@import 
+url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Source+Sans+Pro:wght@200&display=swap');
+
+:root{
+    --primary-font: 'Source Sans Pro' , sans-serif;
+    --primary-color: #f5dbe2;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#firstimage img, #secondimage img, #thirdimage img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* NAVBAR. */
+header{
+    color: black;
+    max-width: 100%;
+    max-height: 40%;
+    border-bottom: 1px solid gray;
+    /* position: sticky;
+    width: 100%;
+    top: 0;
+    bottom: 100vh; */
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+     'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 150;
+    font-size: 1.1rem;    
+}
+
+.navbar .links a:hover{
+color: #b12907;
+font-weight: 500;
+transition: all ease-in 0.15s;
+}
+
+#varsity{
+    color: gray;
+}
+
+.navbar .links #mentorship .highlighted{
+    background-color: #0b5a0b;
+    border-radius: 35px;
+    color: #e6e6e6;
+    width: 90px;
+    padding: 4px 12px;
+}
+
+.navbar .links #mentorship .highlighted:hover{
+    border: none;
+}
+
+#logo{
+    padding: 6px 20px;
+} 
+
+#logo a{
+    font-size: 23px;
+    font-weight: 700;
+}
+
+#brand-name{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.links{
+    display: flex;
+    padding-top: 5px;
+}
+
+.links div{
+    margin: 0px 19px;
+    padding: 5px 0px;
+}
+
+#jumbotron{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 46% 54% ;
+    /* grid-template-rows: 420px; */
+    margin: 20px 0px 10px 0px;
+    height: 450px;
+}
+
+#showcase{
+    margin: 50px 5px auto 42px;
+}
+
+#showcase h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+     'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+#showcase h1 span{
+    color: #e25941;
+}
+
+#showcase .statement{
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-weight: 750;
+    letter-spacing: 00.5px;
+}
+
+ .btn{
+    background-color: #0b5a0b;
+    border-radius: 35px;
+    color: #e6e6e6;
+    width: 170px;
+    padding: 9px 7px;
+    border: none;
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transition: all ease 0.5s;
+    transform: scale(1.1);
+}
+
+.image-container{
+    background-color: var(--primary-color);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+}
+
+.image-container img{
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    border-right: 12px solid #ec720e;
+    border-bottom: 12px solid #ec720e;
+    align-self: center;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    margin-top: 4%;
+}
+
+.title div{
+    margin: 0px 27px;
+}
+
+.title div a{
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;;
+    font-size: 29px;
+    font-weight: 500;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.title a:hover{
+    outline: 1px gray solid;
+    padding: 7px;
+    border-radius: 20% 50% 30%;
+    transform: translateY(-20%);
+}
+
+.middle{
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-rows: 310px;
+    gap: 0px;
+    padding: 30px 0;
+}
+
+.middle .mid-image{
+    display: block;
+    padding: 19px 0px 19px 36px;
+    margin-left: 60px;
+    text-align: center  ;
+    position: relative;
+    transform: rotateY(180deg);
+}
+
+.middle .mid-image img{
+width: 62%;
+height: 270px;
+border-radius: 9px;
+} 
+
+.content{
+    width: 71%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#lines{
+    text-align: center;
+    margin-top: 36px;
+}
+
+#lines #mentor{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+     'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0px 15px;
+}
+
+#firstimage{
+    text-align: center;
+    margin: 38px auto auto 2px;
+}
+
+#other-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+#slanted-lines{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+#first-slanted-line{
+    margin-left: 390px;
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+    width: 0.1px;
+    margin-top: 7px;
+    height: 200px;
+    /* transform: skewY(-80deg); */
+    transform: skewX(-34deg);
+    border-right: 5.4px dotted gray;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 15px;
+}
+
+#second-slanted-line{
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+    width: 0.1px;
+    margin-top: 7px;
+    height: 200px;
+    margin-left: 226px;
+    /* transform: skewY(-80deg); */
+    transform: skewX(34deg);
+    border: 5.4px dotted gray;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 15px;
+}
+
+.mentors_images{
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 92%;
+    margin:  30px auto;
+    padding: 15px 0px;
+}
+
+/* The next thing is to put up a grey circle after the image
+ and add hover effects to the nav links.*/
+
+ .circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #cfcccc;
+    position: absolute;
+    z-index: -1;
+    top: 248px;
+    left: 435px;
+ }
+
+ .mentors_images h4 , .mentors_images blockquote{
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .mentors_images h4{
+        font-size: 1.35rem;
+    }
+
+    .mentors_images blockquote{
+        font-size: 1.2rem;
+        margin-top: -5%;
+    }
+
+    #firstimage blockquote{
+        margin-top: -2%;
+    }
+
+ /* About Section */
+
+ #about{
+     padding-bottom: 40px;
+ }
+
+ #about-brand{
+     font-size: 0.93rem;
+ }
+
+ #content{
+    width: 94%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0 0 0 200px;
+    justify-self: center;
+ }
+
+ #about-brand-image{
+     transform: rotateY(-180deg);
+     margin-left: -30px;
+ }
+
+ .about-circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #cfcccc;
+    position: absolute;
+    z-index: -1;
+    top: 248px;
+    left: 122px;   
+ }
+
+ /* Cards' Section. */
+
+ .cards-section{
+     padding: 20px;
+     width: 100%;
+     display: flex;
+     margin-top: 50px;
+     margin-bottom: 50px;
+     justify-content: center;
+     align-items: center;
+     gap: 100px;
+ }
+
+ .card{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 0 1.5%;
+    margin: 5px 25px;
+    border-radius: 15px;
+    color: #fff;
+    width:100%;
+    height: 230px;
+    opacity: 0.8;
+}
+
+.card:hover{
+    transform: translateY(-20%);
+    transition: transform ease-in 0.3s;
+}
+
+ .card-body{
+    font-family: var(--primary-font);
+    font-size: 1.1rem;
+    margin-top: 45px; 
+    line-height: 1.1rem;
+    width: 100%;
+    padding: 0px 2%px;
+ }
+
+ #first-card{
+     background-color: #ec8f51;
+ }
+
+ #second-card{
+     background-color: #777c81;
+ }
+
+ #third-card{
+     background-color: #4f944f;
+ }
+
+ /* Message Boxes. */
+#messages{
+    padding: 20px 40px;
+    background-color: #f4e7ea;
+}
+
+.message-div{
+    padding: 0px 20px;
+    margin-top: 30px; 
+}
+
+.message-box{
+    border: 1.5px solid gray;
+    border-radius: 10px;
+    /* box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); */
+    background: transparent;
+    width: 80%;
+    text-align: center;
+    margin: 30px auto;
+    position: relative;
+}
+
+.message-content{
+    padding: 10px 20px;
+    text-align: justify;
+    color: #303030;
+    font-family: var(--primary-font);
+    font-weight: 700;
+}
+
+.message-box::after{
+    content: " ";
+    position: absolute;
+    margin: 0 44px;
+    width: 1px;
+    height: 25px;
+    background-color: gray;
+    top: 99.1%;
+    transform: rotate(37deg);
+}
+
+.message-box::before{
+    content: " ";
+    position: absolute;
+    margin: 0 29px;
+    width: 1px;
+    height: 25px;
+    background-color: gray;
+    top: 98.9%;
+    transform: rotate(-39deg);
+}
+
+.horizontal-fix{
+    position: absolute;
+    top: 100%;
+    background-color: #f4e7ea;
+    height: 1px;
+    width: 30px;
+    left: 55%;
+}
+
+/* Authors of the messages. */
+.message-author{
+    text-align: center;
+}
+
+.author-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: -25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.author-icon img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.author-name p{
+    margin-top: -23px;
+}
+
+/* FOOTER SECTION. */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    background-color: #242222;
+}
+
+.company, .policy , .social-media-icons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.social-media-icons a svg{
+    width: 40px;
+    height: 40px;
+    fill: #fff;
+}
+
+footer, footer a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer a{
+    margin: 2.5px 0;
+    color: #c2bebe;
+}
+
+.togglebutton{
+    padding: 5px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin: 2px 15px auto auto;
+    display: none;
+}
+
+.togglebutton svg{
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+}
+
+#lines svg{
+    width: 30%;
+    }
+
+
+/* MEDIA QUERIES. */
+
+/* TABLETS */
+ /* body{
+    overflow-x: hidden;
+}  */
+
+@media(max-width: 1024px) and (min-width: 703px) {
+
+    .links{
+        display: none;
+    }
+
+    #logo{
+        padding: 6px 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    } 
+
+    .togglebutton{
+        display: flex;
+    }
+
+    .togglebutton:focus{
+        border: 1px solid gray;
+        border-radius: 3px;
+    }
+
+   .toggle{
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 35px 0 10px 0;
+    width: 100%;
+    animation-name: slide;
+    animation-duration: 200ms;
+    animation-timing-function: ease-in;
+    display: flex;
+   }
+
+   @keyframes slide {
+       0%{height: 0;}
+       100%{height: 100px;}
+   }
+
+   .toggle a{
+       font-size: 1.25rem;
+   }
+
+   .toggle div{
+    margin: 2px 0; 
+   }
+
+   header, #jumbotron{
+       background-color: var(--primary-color);
+   }
+
+   #jumbotron{
+    display: flex;
+    flex-direction: column;
+    height: 720px;
+    margin: -5% 0 0 0;
+    text-align: center;
+    border-radius: 0 0 40% 40%;
+   }
+
+   #showcase{
+    margin:60px 25px 12px 0;
+   }
+
+   #showcase h1{
+       font-size: 1.8rem;
+   }
+
+   .image-container{
+       margin-top: 3rem;
+       border-bottom-left-radius: 40%;
+       border-bottom-right-radius: 40%;
+       border-top-left-radius: 0;
+   }
+
+   .image-container img{
+       transform: rotate(52deg);
+       margin-bottom: 3%;
+   }
+
+   #showcase .btn{
+    width: 30%;
+   }
+
+   .title{
+    margin-top: 50px;
+   }
+
+   .title div a{
+       font-size: 0.9rem;
+       line-height: 1.4rem;
+       font-weight: 500;
+       /* text-transform: capitalize; */
+   }
+   
+.middle{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 350px;
+    padding: 40px 0px;
+}
+
+.middle .mid-image{
+    padding: 30px 0 0 50px;
+    display: block;
+    position: relative;
+}
+
+.middle .mid-image img{
+   width: 100%;
+   padding: 0;
+}
+
+#about-brand-image{
+    margin-left: 0;
+}
+
+.circle{
+    z-index: -100;
+    top: 76.7%;
+    left: 314px;
+}
+
+.content{
+    width: 100%;
+    padding-right: 5%;
+    font-size: 1.01rem;
+}
+
+#content{
+    width: 100%;
+    padding: 0 15% 0 10%;
+    height: 100%;
+    font-size: 0.9rem;
+}
+
+#lines #mentor{
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin: 0px 7px;
+}
+
+#lines svg{
+width: 30%;
+}
+
+#slanted-lines{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#first-slanted-line{
+margin: 0;    
+}
+
+#second-slanted-line{
+    margin-left: 230px;
+}
+
+.cards-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    width: 50%;
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+#messages{
+    padding-bottom: 50px;
+}
+
+.message-box::before{
+    margin: 0;
+    left: 57%;
+    transform: rotate(-45deg);
+}
+
+.message-box::after{
+    margin: 0;
+    right: 36.4%;
+    transform: rotate(45deg);
+}
+
+.horizontal-fix{
+    background-color: #f4e7ea;
+}
+
+}
+
+
+/* ALL KINDS OF MOBILES */
+@media (max-width: 768px) and (min-width: 320px){
+    .links{
+        display: none;
+    }
+
+    #logo{
+        padding: 6px 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    } 
+
+    .togglebutton{
+        display: flex;
+    }
+
+    .togglebutton:focus{
+        border: 1px solid gray;
+        border-radius: 3px;
+    }
+
+   .toggle{
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 35px 0 10px 0;
+    width: 100%;
+    animation-name: slide;
+    animation-duration: 200ms;
+    animation-timing-function: ease-in;
+    display: flex;
+   }
+
+   @keyframes slide {
+       0%{height: 0;}
+       100%{height: 100px;}
+   }
+
+   .toggle a{
+       font-size: 1.25rem;
+   }
+
+   .toggle div{
+    margin: 2px 0; 
+   }
+
+   #showcase{
+    margin:60px 25px 12px 0;
+   }
+
+   #showcase h1{
+       font-size: 1.8rem;
+   }
+
+   header, #jumbotron{
+       background-color: var(--primary-color);
+   }
+
+   #jumbotron{
+    display: flex;
+    flex-direction: column;
+    height: 720px;
+    margin: -5% 0 0 0;
+    text-align: center;
+   }
+
+   .image-container{
+    margin-bottom: 30%;
+       margin-top: 3rem;
+   }
+
+   .image-container img{
+    margin-bottom: 7%;
+    width: 290px;
+    height: 290px;
+    transform: rotate(52deg);
+   }
+
+   .title{
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       grid-template-rows: repeat(2, 50px);
+       place-items: center;
+       width: 100%;
+       margin-top: 10%;
+   }
+
+   .title div a{
+       font-weight: 400;
+       text-align: center;
+       font-size: 0.95rem;
+   }
+
+   .middle, #about{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .middle h2{
+       font-size: 1rem;
+       margin-top: 5%;
+   }
+
+   .middle .mid-image, #about-brand-image{
+    display: block;
+    margin: auto;
+    padding: 2px 2px 2px 5px;
+    text-align: center  ;
+    position: relative;
+    transform: rotateY(180deg);
+   }
+
+   #about-brand-image{
+       width: 90%;
+       margin-left: 4.9%;
+       height: auto;
+   }
+
+   .middle .mid-image img{
+    width: 90%;
+    height: 270px;
+    border-radius: 9px;
+    margin: auto;
+    } 
+
+    .content{
+        margin: auto;
+        width: 92%;
+        text-align: justify;
+        font-size: 0.9rem;
+    }
+
+    #content{
+        width: 100%;
+        padding: 0 15% 0 10%;
+        height: 100%;
+        font-size: 0.9rem;
+        margin-bottom: 26px;
+    }
+
+    #slanted-lines{
+        display: none;
+    }
+
+   #lines #mentor{
+        font-size: 0.85rem;
+        font-weight: 500;
+        margin: 0px 7px;
+    }
+
+    .mentors_images{
+        box-shadow: none;
+        background: transparent;
+    }
+
+    #other-images{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #lines svg{
+        width: 14%;
+    }
+
+    .mentors_images div{
+        margin: 2em 0;
+    }
+
+    .cards-section{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .card{
+        width: 80%;
+        font-size: 4rem;
+        font-weight: 300;
+        height: auto;
+    }
+
+    #messages{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .message-box{
+        width: 100%;
+        margin: 30px -2%;
+        }
+
+        .social-media-icons{
+            display: flex;
+            flex-direction: row;
+            align-self: flex-end;
+            grid-column: 1/span 2;
+            margin-top: 10%;
+        }
+
+        footer{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+            background-color: #242222;
+        }
+        
+        .social-media-icons a svg{
+            width: 40px;
+            height: 40px;
+            fill: #fff;
+        }
+
+        .social-media-icons a{
+            margin: 0 3%;
+        }
+        
+        footer, footer a{
+            font-size: 0.8rem;
+           }
+        
+        footer a{
+            margin: 2.5px 0;
+            color: #c2bebe;
+        }
+    }
+
+    @media (max-width: 320px) {
+        body{
+            display: block;
+        }
+    }

@@ -8,6 +8,17 @@
     <link rel="shortcut icon" href=" ">
     <link rel="stylesheet" href="./style.css">
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script>
+    window.onload = function( ){
+    const btn =  document.querySelector(".togglebutton");
+    const logo = document.querySelector("#logo");
+    const navlinks = document.querySelector(".links");
+    
+btn.addEventListener('click', ( ) => {
+    navlinks.classList.toggle("toggle");
+    });
+}
+    </script>
 </head>
 
 <body>
@@ -293,17 +304,5 @@
         </a>
     </div>
 </footer>
-
-    <script>
-    window.onload = function( ){
-    const btn =  document.querySelector(".togglebutton");
-    const logo = document.querySelector("#logo");
-    const navlinks = document.querySelector(".links");
-    
-btn.addEventListener('click', ( ) => {
-    navlinks.classList.toggle("toggle");
-    });
-}
-    </script>
 </body>
 </html>
